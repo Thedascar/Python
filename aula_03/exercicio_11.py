@@ -1,21 +1,38 @@
 print("Calculadora")
-a = int(input("Digite o 1º valor: "))
-b = int(input("Digite o 2º valor: "))
 print("Qual operação deseja realizar ?")
 op = input("Digite uma operação: ")
-if op == "+":
-    res = a + b
-    op = "+"
-elif op == "-":
-    res = a - b
-    op = "-"
-elif op == "*":
-    res = a * b
-    op = "*"
-elif op == "/":
-    res = a / b
-    op = "/"
+if op != 's':
+    a = int(input("Digite o 1º valor: "))
+    b = int(input("Digite o 2º valor: "))
 else:
-    print("Operador inválido")
+    print('Bye')
 
-print(f"A operação entre {a} {op} {b} é igual a: {res}")
+while op != 's':
+
+    if op == "+":
+        res = a + b
+        op = "+"
+    elif op == "-":
+        res = a - b
+        op = "-"
+    elif op == "*":
+        res = a * b
+        op = "*"
+    elif op == "/":
+        res = a / b
+        op = "/"
+    else:
+        res = print("Operador inválido")
+
+    print(f"A operação entre {a} {op} {b} é igual a: {res}")
+
+    op = input("Digite uma operação: ")
+    if op != 's':
+        a = int(input("Digite o 1º valor: "))
+        b = int(input("Digite o 2º valor: "))
+    else:
+        print('Bye')
+
+
+
+
