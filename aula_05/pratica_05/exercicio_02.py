@@ -5,12 +5,6 @@ def valida_int(pergunta,min,max):
     return x
 
 
-print('#--------------------#')
-print('|  Menu de Cadastro  |')
-print('|--------------------|')
-print('|Meus Games Favorites|')
-print('#--------------------#')
-
 def existeArquivo(nomeArquivo):
     try:
         a = open(nomeArquivo, 'rt')
@@ -56,7 +50,11 @@ else:
     criarArquivo(arquivo)
 
 
-
+print('#--------------------#')
+print('|  Menu de Cadastro  |')
+print('|--------------------|')
+print('|Meus Games Favorites|')
+print('#--------------------#')
 
 
 while True:
